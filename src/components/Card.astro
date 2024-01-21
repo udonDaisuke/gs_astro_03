@@ -1,0 +1,24 @@
+---
+import	type {CollectionEntry} from 'astro:content';
+interface Props {
+	// id:string
+	// body:string
+	// title:string
+	// pubDate:string
+	// Description:string
+	test:CollectionEntry<'posts'>;
+}
+// const {id,body,title,pubDate,description}=Astro.Props
+const {test} = Astro.props
+---
+
+<div>
+	<p>{test.id}</p>
+	<p>{test.body}</p>
+	<!-- <p>{test.data.title}</p>
+	<p>{test.data.pubDate}</p>
+	<p>{test.data.description}</p> -->
+</div>
+
+
+
